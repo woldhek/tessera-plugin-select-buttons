@@ -1,0 +1,25 @@
+# What tools/preview.py shows (docs/PREVIEW.md of MaxGramser/tessera-plugins): the HDMI input of a desk with three
+# sources, with icons and without, and a mode of four options.
+tiles:
+  - tile: buttons
+    name: HDMI
+    entity: input_select.hdmi_input
+    options: { icon_1: gamepad-variant, icon_2: desk, icon_3: briefcase }
+    sizes: [3x1, 2x1, 1x3]
+  - tile: buttons
+    name: HDMI
+    entity: input_select.hdmi_input
+    sizes: [1x1, 2x2]
+  - tile: buttons
+    name: Living room
+    entity: select.living_room_mode
+    options: { show_name: true, icon_1: movie-open, icon_2: music, icon_3: home, icon_4: power, show_labels: false }
+    sizes: [2x1, 4x1]
+
+states:
+  input_select.hdmi_input:
+    state: Personal PC
+    attributes: { friendly_name: HDMI input, options: [Devkit, Personal PC, Office PC] }
+  select.living_room_mode:
+    state: Music
+    attributes: { friendly_name: Living room mode, options: [Film, Music, Evening, "Off"] }

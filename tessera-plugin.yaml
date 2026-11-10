@@ -1,0 +1,76 @@
+# The manifest: who made the plugin, what it may do, and what the Tessera app shows. It holds no code and no words:
+# every name, label and hint below is a key into translations/<language>.json, part "app".
+# Every field is explained in docs/MANIFEST.md of MaxGramser/tessera-plugins.
+id: select_buttons
+version: 0.1.0
+# 0.12: tessera::action with a JSON object (0.10: tap_point(), 0.9: ui::set_fill and Tone).
+api: "0.12"
+icon: gesture-tap-button
+maintainer: woldhek
+license: MIT
+stage: beta
+topics: [home]
+requires:
+  esphome: 2026.6.2
+boards: any
+# About what its code adds to the firmware: a tile of six keys and the names of 24 icons.
+flash_kb: 8
+
+tiles:
+  - id: buttons
+    name: tile_name
+    icon: gesture-tap-button
+    # Every size: a wide tile puts the keys in a row, a tall one stacks them, a square one makes a grid of them.
+    sizes: { min: 1x1, max: 9x9 }
+    # Six keys at most, each a block with a label and an icon (about 280 bytes a key), the name over them and a note.
+    memory: 1900
+    domains: [input_select, select]
+    attributes: [options]
+    example: tile_example
+    preview: { title: "{name}", value: "{state}" }
+    options:
+      - { id: show_name, kind: toggle, label: show_name, hint: show_name_hint, default: true }
+      - { id: show_labels, kind: toggle, label: show_labels, hint: show_labels_hint, default: true }
+      - { id: confirm, kind: toggle, label: confirm, hint: confirm_hint, default: false }
+      - id: icon_1
+        kind: choice
+        label: icon_1
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+      - id: icon_2
+        kind: choice
+        label: icon_2
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+      - id: icon_3
+        kind: choice
+        label: icon_3
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+      - id: icon_4
+        kind: choice
+        label: icon_4
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+      - id: icon_5
+        kind: choice
+        label: icon_5
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+      - id: icon_6
+        kind: choice
+        label: icon_6
+        hint: icon_hint
+        default: none
+        choices: [{ value: none, label: icon_none }, { value: gamepad-variant, label: icon_gamepad_variant }, { value: monitor, label: icon_monitor }, { value: laptop, label: icon_laptop }, { value: desk, label: icon_desk }, { value: briefcase, label: icon_briefcase }, { value: home, label: icon_home }, { value: television, label: icon_television }, { value: projector, label: icon_projector }, { value: cast, label: icon_cast }, { value: audio-video, label: icon_audio_video }, { value: remote-tv, label: icon_remote_tv }, { value: speaker, label: icon_speaker }, { value: headphones, label: icon_headphones }, { value: microphone, label: icon_microphone }, { value: music, label: icon_music }, { value: radio, label: icon_radio }, { value: record-player, label: icon_record_player }, { value: movie-open, label: icon_movie_open }, { value: account, label: icon_account }, { value: account-group, label: icon_account_group }, { value: router-wireless, label: icon_router_wireless }, { value: power, label: icon_power }, { value: play, label: icon_play }, { value: cog, label: icon_cog }]
+
+permissions:
+  read_entities: [input_select, select]
+  home_assistant_actions:
+    - input_select.select_option
+    - select.select_option
