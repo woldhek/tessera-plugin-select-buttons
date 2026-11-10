@@ -40,4 +40,6 @@ werkt voor elke keuze uit een handvol opties: een scène, een modus, een speaker
 
 ## Op welke schermen geprobeerd
 
-Nog op geen enkel scherm. Alleen gecontroleerd tegen de code van Tessera en op een computer getekend.
+- Guition 4-inch (ESP32-S3, 480 x 480), Tessera stable.
+
+Nog niet geprobeerd op de CYD of de 10-inch-schermen. Laat in een issue weten hoe hij op de jouwe werkt.

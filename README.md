@@ -40,4 +40,6 @@ choice of a handful of options: a scene, a mode, a speaker.
 
 ## Screens it was tried on
 
-Not on a screen yet. Checked against Tessera's code and drawn on a computer only.
+- Guition 4-inch (ESP32-S3, 480 x 480), Tessera stable.
+
+Not tried yet on the CYD or the 10-inch screens. Tell me in an issue how it works on yours.
