@@ -2,7 +2,7 @@
 # every name, label and hint below is a key into translations/<language>.json, part "app".
 # Every field is explained in docs/MANIFEST.md of MaxGramser/tessera-plugins.
 id: select_buttons
-version: 0.1.0
+version: 0.1.1
 # 0.12: tessera::action with a JSON object (0.10: tap_point(), 0.9: ui::set_fill and Tone).
 api: "0.12"
 icon: gesture-tap-button

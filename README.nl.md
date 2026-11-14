@@ -17,7 +17,7 @@ werkt voor elke keuze uit een handvol opties: een scène, een modus, een speaker
 ## Wat je nodig hebt
 
 - Tessera 0.4.91 of nieuwer.
-- Een `input_select`-helper of een `select`-entity in Home Assistant met de opties die je wilt, zoals `Devkit`,
+- Een `input_select`-helper of een `select`-entity in Home Assistant met de opties die je wilt, zoals `Console`,
   `Personal PC` en `Office PC`.
 
 ## Instellen

@@ -19,7 +19,7 @@ tiles:
 states:
   input_select.hdmi_input:
     state: Personal PC
-    attributes: { friendly_name: HDMI input, options: [Devkit, Personal PC, Office PC] }
+    attributes: { friendly_name: HDMI input, options: [Console, Personal PC, Office PC] }
   select.living_room_mode:
     state: Music
     attributes: { friendly_name: Living room mode, options: [Film, Music, Evening, "Off"] }

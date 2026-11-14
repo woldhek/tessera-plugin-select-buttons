@@ -12,7 +12,7 @@
     "name": "Keuzeknoppen",
     "summary": "Een rij knoppen voor een input select: tik er een om hem te kiezen, de huidige keuze licht op.",
     "tile_name": "Keuzeknoppen",
-    "tile_example": "Devkit · Personal PC · Office PC",
+    "tile_example": "Console · Personal PC · Office PC",
     "show_name": "Naam tonen",
     "show_name_hint": "De naam van de tegel (of van de entity) boven de knoppen, als er ruimte is.",
     "show_labels": "Namen van de opties tonen",

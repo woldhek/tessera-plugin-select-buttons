@@ -12,7 +12,7 @@
     "name": "Select buttons",
     "summary": "A row of buttons for an input select: tap one to choose it, the current choice lights up.",
     "tile_name": "Select buttons",
-    "tile_example": "Devkit · Personal PC · Office PC",
+    "tile_example": "Console · Personal PC · Office PC",
     "show_name": "Show the name",
     "show_name_hint": "The tile's name (or the entity's) above the buttons, when there is room.",
     "show_labels": "Show the option names",

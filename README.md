@@ -18,7 +18,7 @@ choice of a handful of options: a scene, a mode, a speaker.
 
 - Tessera 0.4.91 or later.
 - An `input_select` helper or a `select` entity in Home Assistant with the options you want, such as
-  `Devkit`, `Personal PC` and `Office PC`.
+  `Console`, `Personal PC` and `Office PC`.
 
 ## Set up
 
